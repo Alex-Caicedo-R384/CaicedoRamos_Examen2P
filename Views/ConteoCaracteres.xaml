@@ -11,12 +11,17 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
         <Label Text="Conteo de Caracteres" FontSize="30" TextColor="White" Grid.Row="0" HorizontalOptions="CenterAndExpand"/>
 
         <Entry x:Name="InputEntry" Placeholder="Ingresa texto" TextColor="White" BackgroundColor="#8c8c8c" Grid.Row="1" Margin="20"/>
-        <Button Text="Contar Caracteres" Clicked="CountButton_Clicked" BackgroundColor="#800020" TextColor="White" Grid.Row="2" Margin="20"/>
+
+        <StackLayout Orientation="Horizontal" Grid.Row="2" HorizontalOptions="CenterAndExpand">
+            <Button Text="Contar Caracteres" Clicked="CountButton_Clicked" BackgroundColor="#800020" TextColor="White" Margin="10"/>
+            <Button Text="Limpiar" Clicked="ClearButton_Clicked" BackgroundColor="#8c8c8c" TextColor="White" Margin="10"/>
+        </StackLayout>
 
         <Label x:Name="ResultLabel" FontSize="16" TextColor="White" Grid.Row="3" Margin="20"/>
     </Grid>

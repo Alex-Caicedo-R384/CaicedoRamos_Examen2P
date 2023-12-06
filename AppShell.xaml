@@ -6,21 +6,19 @@
     xmlns:views="clr-namespace:CaicedoRamos_Examen2P.Views"
     Shell.FlyoutBehavior="Flyout">
 
-    <TabBar>
+    <FlyoutItem Title="Notas" Icon="{OnPlatform 'icon_notes.png', iOS='icon_notes_ios.png', MacCatalyst='icon_notes_ios.png'}">
         <ShellContent
-            Title="Notas"
-            ContentTemplate="{DataTemplate views:AllNotes}"
-            Icon="{OnPlatform 'icon_notes.png', iOS='icon_notes_ios.png', MacCatalyst='icon_notes_ios.png'}" />
+            ContentTemplate="{DataTemplate views:AllNotes}" />
+    </FlyoutItem>
 
+    <FlyoutItem Title="Acerca De" Icon="{OnPlatform 'icon_about.png', iOS='icon_about_ios.png', MacCatalyst='icon_about_ios.png'}">
         <ShellContent
-            Title="Acerca De"
-            ContentTemplate="{DataTemplate views:AboutPage}"
-            Icon="{OnPlatform 'icon_about.png', iOS='icon_about_ios.png', MacCatalyst='icon_about_ios.png'}" />
+            ContentTemplate="{DataTemplate views:AboutPage}" />
+    </FlyoutItem>
 
+    <FlyoutItem Title="Conteo de Caracteres" Icon="{OnPlatform 'icon_conteocaracteres.png', iOS='icon_conteocaracteres_ios.png', MacCatalyst='icon_conteocaracteres_ios.png'}">
         <ShellContent
-            Title="Conteo De Caracteres"
-            ContentTemplate="{DataTemplate views:ConteoCaracteres}"
-            Icon="{OnPlatform 'icon_conteocaracteres.png', iOS='icon_conteocaracteres_ios.png', MacCatalyst='icon_conteocaracteres_ios.png'}" />
-    </TabBar>
+            ContentTemplate="{DataTemplate views:ConteoCaracteres}" />
+    </FlyoutItem>
 
 </Shell>
