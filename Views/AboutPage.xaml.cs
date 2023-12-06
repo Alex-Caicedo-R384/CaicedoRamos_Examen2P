@@ -9,6 +9,6 @@ public partial class AboutPage : ContentPage
 
     private async void LearnMore_Clicked(object sender, EventArgs e)
     {
-        await Launcher.Default.OpenAsync("https://aka.ms/maui");
+        await Launcher.Default.OpenAsync("https://github.com/Alex-Caicedo-R384/CaicedoRamos_Examen2P.git");
     }
 }
